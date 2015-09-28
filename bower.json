@@ -1,0 +1,20 @@
+{
+  "name": "cloudl3",
+  "version": "0.0.0",
+  "homepage": "https://github.com/cloudle/cloudl3Native",
+  "authors": [
+    "cloudle <lehaoson@live.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "~0.13.3",
+    "flux": "~2.1.1"
+  }
+}

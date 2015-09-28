@@ -1,0 +1,21 @@
+@import "../variable"; @import "../mixins"
+
+.click-command
+  cursor pointer
+
+.hide
+  display none
+
+.clearfix
+  &:before, &:after
+    content ""
+    display table
+  &:after
+    clear both
+
+.pointer-event-off
+  pointer-events none
+
+for color in colors
+  .bg-{color[0]}
+    background-color color[1]
