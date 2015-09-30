@@ -4,7 +4,7 @@ var express = require('express'),
 
 app.set('views', './server/views');
 app.set('view engine', 'jade');
-app.use(express.static('./server/assets'));
+app.use(express.static('./assets'));
 
 classicRouter.get('*', function (req, res) {
   res.render('home', {});

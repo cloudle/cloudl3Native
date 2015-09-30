@@ -1,7 +1,7 @@
 Hello = React.createClass({
   render() {
     return(
-      <h1>Hello!</h1>
+      <h1>Hello!!</h1>
     )
   }
 });

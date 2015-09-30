@@ -1,6 +1,0 @@
-(function() {
-  console.log('this is sub');
-
-}).call(this);
-
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN1Yi5jb2ZmZWUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFBQSxPQUFPLENBQUMsR0FBUixDQUFZLGFBQVo7QUFBQSIsImZpbGUiOiJidW5kbGUuanMiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zb2xlLmxvZyAndGhpcyBpcyBzdWInIl0sInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9
