@@ -5,9 +5,11 @@
       <w>browserify</w>
       <w>bundler</w>
       <w>cjsx</w>
+      <w>cloudl</w>
       <w>coffeeify</w>
       <w>gutil</w>
       <w>jeet</w>
+      <w>lokijs</w>
       <w>nodemon</w>
       <w>reactify</w>
       <w>sourcemaps</w>
