@@ -42,8 +42,10 @@
     "watchify": "^3.4.0"
   },
   "dependencies": {
+    "coffee-script": "^1.10.0",
     "express": "^4.13.3",
     "jade": "^1.11.0",
-    "mongoose": "^4.1.9"
+    "mongoose": "^4.1.9",
+    "seraph": "^0.13.3"
   }
 }

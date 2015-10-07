@@ -1,6 +1,11 @@
+require('coffee-script/register');
+
 var express = require('express'),
   app = express(),
-  apiRouter = express.Router(), classicRouter = express.Router();
+  apiRouter = express.Router(), classicRouter = express.Router(),
+  Wings = require('../app/scripts/wings/wings.coffee');
+
+console.log(Wings);
 
 app.set('views', './server/views');
 app.set('view engine', 'jade');
