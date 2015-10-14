@@ -1,0 +1,3 @@
+Photonics = {}
+
+module.exports = Photonics

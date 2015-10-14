@@ -1,4 +1,4 @@
-Photonics = {}
+Photonics = require('./core.coffee')
 
 class Photonics.Store
   constructor: (@serverAddress) ->
