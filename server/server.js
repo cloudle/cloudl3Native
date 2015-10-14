@@ -1,15 +1,15 @@
 require('coffee-script/register');
 
-var express = require('express'),
-  app = express(),
+var express = require('express'), app = express(),
   apiRouter = express.Router(), classicRouter = express.Router(),
-  Wings = require('../app/scripts/wings/wings.coffee');
+  Wings = require('../app/scripts/wings/wings.coffee'),
+  rabbitMQ = require('./utilities/queue.coffee');
 
-console.log(Wings);
 
 app.set('views', './server/views');
 app.set('view engine', 'jade');
 app.use(express.static('./assets'));
+require('./utilities/redis-session.coffee')(app);
 
 classicRouter.get('*', function (req, res) {
   res.render('home', {});

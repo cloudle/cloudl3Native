@@ -14,8 +14,10 @@
       <w>photonics</w>
       <w>reactify</w>
       <w>reddis</w>
+      <w>resave</w>
       <w>sourcemaps</w>
       <w>uglify</w>
+      <w>vhost</w>
       <w>watchify</w>
     </words>
   </dictionary>
