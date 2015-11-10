@@ -1,4 +1,4 @@
-Hello = React.createClass({
+var Hello = React.createClass({
   render() {
     return(
       <h1>Hello!!</h1>
@@ -6,4 +6,7 @@ Hello = React.createClass({
   }
 });
 
-module.exports = Hello;
+module.exports = {
+  Hello,
+  Cloud: "Cloud"
+};

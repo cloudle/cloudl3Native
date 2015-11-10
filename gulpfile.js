@@ -64,7 +64,7 @@ function mapError(err) {
 function mapLog(msg) { gutil.log('Script updated: '+chalk.blue.bold(msg)); }
 
 gulp.task('babelify', function(){
-  watchifyBuilder(babelify, './app/entry.js', 'es2015-bundle.js', {presets: ["react"]}, true);
+  watchifyBuilder(babelify, './app/entry.js', 'es2015-bundle.js', {presets: ["react", "es2015"]}, true);
 });
 
 gulp.task('coffeeify', function(){
