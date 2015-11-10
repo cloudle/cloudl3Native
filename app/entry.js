@@ -3,8 +3,13 @@ var Hello = require('./components/hello.jsx'),
 
 model = new falcor.Model({source: new httpDataSource('/model.json')});
 
-for (i of [1, 2, 3, 4]) {
-  console.log(i);
-}
+model.get("events[0..3]['name', 'description']").then((results) => {
+  var items = results.json.events;
+
+  for (i of Object.keys(items)) {
+    console.log(items[i]);
+  }
+});
+
 
 ReactDOM.render(<Hello/>, document.getElementById("application"));
