@@ -3,7 +3,7 @@ require('coffee-script/register');
 var express = require('express'), app = express(),
   apiRouter = express.Router(), classicRouter = express.Router(),
   Wings = require('../app/scripts/wings/wings.coffee'),
-  rabbitMQ = require('./utilities/queue.coffee'),
+  //rabbitMQ = require('./utilities/queue.coffee'),
   falcor = require('falcor'), falcorEpxress = require('falcor-express'),
   falcorRouter = require('falcor-router'), _ = require('lodash');
 
@@ -58,7 +58,7 @@ var $ref = falcor.Model.ref, eventsData = {
 app.set('views', './server/views');
 app.set('view engine', 'jade');
 app.use(express.static('./assets'));
-require('./utilities/redis-session.coffee')(app);
+//require('./utilities/redis-session.coffee')(app);
 
 app.use('/model.json', falcorEpxress.dataSourceRoute(function(req, res){
   return new falcorRouter([{

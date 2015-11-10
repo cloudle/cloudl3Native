@@ -11,7 +11,7 @@ var gulp = require('gulp'),
   sourcemaps = require('gulp-sourcemaps'),
   nodemon = require('gulp-nodemon'),
   browserify = require('browserify'),
-  reactify = require('reactify'),
+  babelify = require('babelify'),
   coffeeify = require('coffeeify'),
   watchify = require('watchify'),
   uglify = require('gulp-uglify'),
@@ -63,20 +63,8 @@ function mapError(err) {
 
 function mapLog(msg) { gutil.log('Script updated: '+chalk.blue.bold(msg)); }
 
-//gulp.task('react-watchify', function () {
-//  var args = merge(watchify.args, { debug: true });
-//  var bundler = watchify(browserify('./app/entry.jsx', args))
-//    .transform(reactify, { /* opts */ });
-//
-//  bundleScript(bundler, 'react-bundle.js');
-//
-//  bundler.on('update', function () {
-//    bundleScript(bundler, 'react-bundle.js');
-//  })
-//});
-
-gulp.task('reactify', function(){
-  watchifyBuilder(reactify, './app/entry.jsx', 'react-bundle.js', {}, true);
+gulp.task('babelify', function(){
+  watchifyBuilder(babelify, './app/entry.jsx', 'es2015-bundle.js', {presets: ["react"]}, true);
 });
 
 gulp.task('coffeeify', function(){
@@ -151,4 +139,4 @@ gulp.task('nodemon', function (callback) {
   });
 });
 
-gulp.task('default', ['style-bundle', 'reactify', 'coffeeify', 'browser-sync']);
+gulp.task('default', ['style-bundle', 'babelify', 'coffeeify', 'browser-sync']);

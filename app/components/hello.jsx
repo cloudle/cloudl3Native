@@ -5,3 +5,5 @@ Hello = React.createClass({
     )
   }
 });
+
+module.exports = Hello;
