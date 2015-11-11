@@ -16,6 +16,7 @@
   "dependencies": {
     "react": "",
     "flux": "",
-    "lokijs": ""
+    "lokijs": "",
+    "rxjs": "~4.0.6"
   }
 }
